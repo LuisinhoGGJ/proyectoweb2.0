@@ -11,6 +11,68 @@
         <!-- css propio -->
         <!-- <link rel="stylesheet" href="./css/style.css"> -->
         <link rel="stylesheet" href="css/estilos.css">
+        <style>
+        
+          /* .videos {
+            display: grid;
+            place-items: center;
+            height: 50vh;
+            float: left;
+            align-items: center;
+          }
+          .videos-title{
+              text-align: center;
+          } */
+          body{
+        margin: 0;
+        padding: 0;
+        background: #333;
+        font-family: sans-serif;
+        }
+          h1{
+              font-size: 70px;
+              color:#fff;
+              text-align: center;
+          }
+          .contenedor{ 
+            width:100%;
+              margin: auto;
+          }
+          img{
+              width: 100%;
+          }
+          .video__columna{
+              margin: 5px; 
+          }
+          .video .contenedor{
+              display: grid;
+              }
+          @media(min-width:520px){
+              .video .contenedor{     
+            grid-template-columns: repeat(2,50%);
+              }
+          }
+          @media(min-width:728px){
+            .video .contenedor{
+            grid-template-columns: repeat(3,33.3%);
+              }
+          }
+          @media(min-width:1024px){
+            .video .contenedor{
+              
+            grid-template-columns: repeat(4,25%);
+              }
+              .contenedor{
+                  width: 1024px;
+              }
+          }
+          @media(min-width:1200px){
+              .contenedor{
+                  width: 1200px;
+              }
+          }
+              
+        </style>
         
     </head>
     <body>
@@ -63,18 +125,27 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-   <H1> Tarea ver Moqups</H1>
-   <p><a href="https://app.moqups.com/Us7BWSJ9NlBS6Xaczhp2sbnnlTESAQLy/view/page/a8b49fd9f" target="_blank">Ir a los wireframes Pcs</a> </p>
-   <p><a href="https://app.moqups.com/Us7BWSJ9NlBS6Xaczhp2sbnnlTESAQLy/view/page/a2676edd5" target="_blank">Ir a los wireframes Movil</a> </p>
-
-
-    <h2>Video de YouTube</h2>
-    <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/-prxId5uHgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+    
+    <h1 class="videos-title">REEL</h1>
+<section class="video">
+    <div class="contenedor">
+        <article class="video__columna">
+          <iframe width="350" height="315" src="https://www.youtube.com/embed/-prxId5uHgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+          <article class="video__columna">
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/EJ2GzZAORQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+          <article class="video__columna">
+            <iframe width="350" height="315" src="https://www.youtube.com/embed/N88g_IGGHRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+        <article class="video__columna">
+        <iframe width="350" height="315" src="https://www.youtube.com/embed/nzFAh2irxtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+      </article>
+        
     </div>
-    <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/EJ2GzZAORQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
