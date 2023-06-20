@@ -217,19 +217,67 @@ nav ul li a{
         color: white;
         }
 /* Contacto */
-        .formulario {
-            display: grid;
-            place-items: center;
-            height: 50vh;
-          }
-          .form-title{
-              text-align: center;
-          }
+        form{
+            background-color: #d6ec09;
+            border-radius: 20px;
+            color: #2c2c2c;
+            font-size: 0.8em;
+            padding: 20px;
+            margin: 0 auto;
+            width: 320px;
+        }
+
+        input, textarea{
+            border: 0;
+            outline: none;
+
+            width: 280px;
+        }
+
+        .field{
+            border: solid 1px #ccc;
+            padding: 10px;
+
+            
+        }
+
+        .field:focus{
+            border-color: #18A383;
+        }
+
+        .center-content{
+            text-align: center;
+        }
+            
+        .btn{
+            border-radius: 3px;
+            display: inline-block;
+            padding: 20px 15px;
+            text-decoration: none;
+            text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+            box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+        }
+
+        .btn-green{
+            color: white;
+            background-color: #3CC93F;
+        }
+        .btn-green:hover{
+            background-color: #aef704;	
+        }
+        .btn-green:active{
+            background-color: #29962A;
+        }
+        .txtregistro{
+        font-size: 30px;
+        color: #333333;
+        text-align: center
+        }
  /* video          */
         .videos {
               display: grid;
               place-items: center;
-              height: 50vh;
+      
             }
             .videos-title{
                 text-align: center;
@@ -237,11 +285,13 @@ nav ul li a{
              .videos {
               display: grid;
               place-items: center;
-              height: 50vh;
+             
+                place-items: center;
             }
             .videos-title{
                 text-align: center;
             }
+ /* Nosotros */
          .nosotros{
                 height: 100%;
                 width: 100;
@@ -249,13 +299,24 @@ nav ul li a{
                 background: linear-gradient(245.59deg,#4d9559 0%,);
                 position:relative;
                 display: grid;
-                grid-template-columns: repeat(2,1fr);
+                /* grid-template-columns: repeat(2,1fr); */
                 align-items: center;
                 gap:2rem;
+                
             }
             section{
-                padding: 0 20%;
+                padding: 0 30%;
+                
             }
+        .nos-imagen{
+            
+            position: relative;
+            float: left;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 100;
+            min-height: 100 vh;
+        }
             /* .nos-title{
                 font-size: 30px;
                 color:#fff;
@@ -347,4 +408,75 @@ nav ul li a{
 
 }
 
+}
+/* Footer */
+footer{
+    position:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: #272727;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 20px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
